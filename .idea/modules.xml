@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CustomTitle/CustomTitle.iml" filepath="$PROJECT_DIR$/CustomTitle/CustomTitle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EventBus_LianXi/EventBus_LianXi.iml" filepath="$PROJECT_DIR$/EventBus_LianXi/EventBus_LianXi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GreenDao_Retrofit/GreenDao_Retrofit.iml" filepath="$PROJECT_DIR$/GreenDao_Retrofit/GreenDao_Retrofit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MonthMoNi/MonthMoNi.iml" filepath="$PROJECT_DIR$/MonthMoNi/MonthMoNi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Product_Recyclerview/Product_Recyclerview.iml" filepath="$PROJECT_DIR$/Product_Recyclerview/Product_Recyclerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReViewApp.iml" filepath="$PROJECT_DIR$/ReViewApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libzxing/libzxing.iml" filepath="$PROJECT_DIR$/libzxing/libzxing.iml" />
+    </modules>
+  </component>
+</project>

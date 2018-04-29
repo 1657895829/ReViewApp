@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao' // 在项目的build.gradle里面添加GreenDao插件
+
+
+android {
+    compileSdkVersion 27
+
+
+
+    defaultConfig {
+        applicationId "com.example.greendao_retrofit"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+/**
+ * 新建GreenDao的依赖作用域
+ */
+greendao{
+    targetGenDir 'src/main/java'                //固定格式：作用域代码文件夹
+    daoPackage 'com.example.greendao_retrofit.dao'  //固定格式：作用域代码指定的包名，根据自己Model的包名加上 .dao即可
+    schemaVersion 1                             //固定格式：版本号
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //添加GreenDao及数据库database的依赖
+    compile 'org.greenrobot:greendao:3.2.2'
+    compile 'net.zetetic:android-database-sqlcipher:3.5.7@aar'
+    //由于Retrofit是基于OkHttp，所以还需要添加OkHttp库依赖
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.okhttp3:okhttp:3.9.0'
+    //如果采用了 Gson 解析，需要在 Gradle加入retrofit2类库中的gson依赖
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.squareup.retrofit2:converter-scalars:2.0.0'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+}
