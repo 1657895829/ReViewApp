@@ -8,6 +8,7 @@ import com.amap.api.maps.MapView;
 
 /**
     key：5ec5dacc95ae78790ecd0165eb114f51
+
     地图图层有3种：
     MAP_TYPE_NAVI   导航地图
     MAP_TYPE_NIGHT  夜景地图
