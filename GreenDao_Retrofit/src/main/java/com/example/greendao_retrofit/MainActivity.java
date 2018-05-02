@@ -18,7 +18,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 // 使用Retrofit封装的方法,操作数据库
 public class MainActivity extends AppCompatActivity {
-
     @BindView(R.id.btn)
     Button mBtn;
 
