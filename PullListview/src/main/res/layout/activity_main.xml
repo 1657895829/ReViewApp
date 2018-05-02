@@ -5,11 +5,11 @@
 
     <!--android:cacheColorHint="@android:color/transparent" 滚动ListView时不会掉黑 。
     滚动时，重绘View的时候就不会有背景颜色。-->
-    <com.example.pullrecyclerview.view.HeaderRecyclerView
+    <com.example.pullrecyclerview.view.HeaderListView
         android:id="@+id/lv_header"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:cacheColorHint="@android:color/transparent">
 
-    </com.example.pullrecyclerview.view.HeaderRecyclerView>
+    </com.example.pullrecyclerview.view.HeaderListView>
 </RelativeLayout>

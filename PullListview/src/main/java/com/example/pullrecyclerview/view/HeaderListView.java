@@ -1,8 +1,6 @@
 package com.example.pullrecyclerview.view;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
@@ -10,13 +8,14 @@ import android.view.ViewParent;
 import android.view.animation.Animation;
 import android.view.animation.Transformation;
 import android.widget.ImageView;
+import android.widget.ListView;
 
 /**
  * 创建自定义view继承ListView
  * 需求：
  * 下拉ListView，图片跟随手指移动而放大，手指离开屏幕，图片则反弹回原始大小
  */
-public class HeaderRecyclerView extends RecyclerView {
+public class HeaderListView extends ListView {
     // 放大的 ImageView
     private ImageView headerIV;
     private int height;
@@ -25,17 +24,18 @@ public class HeaderRecyclerView extends RecyclerView {
         this.headerIV = headerIV;
     }
 
-    public HeaderRecyclerView(Context context) {
+    public HeaderListView(Context context) {
         super(context);
     }
 
-    public HeaderRecyclerView(Context context, @Nullable AttributeSet attrs) {
+    public HeaderListView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public HeaderRecyclerView(Context context, @Nullable AttributeSet attrs, int defStyle) {
-        super(context, attrs, defStyle);
+    public HeaderListView(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
     }
+
     /**
      * 当 view 依附到 activity 上面的时候回调
      * @param hasWindowFocus
@@ -130,7 +130,7 @@ public class HeaderRecyclerView extends RecyclerView {
         return super.onTouchEvent(ev);
     }
 
-    public class MyAnimation extends Animation {
+    public class MyAnimation extends Animation{
 
         private ImageView imageView;
         // imageview 的原始高度
@@ -163,4 +163,3 @@ public class HeaderRecyclerView extends RecyclerView {
         }
     }
 }
-

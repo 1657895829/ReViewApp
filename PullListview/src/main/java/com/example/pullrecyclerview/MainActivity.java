@@ -2,7 +2,6 @@ package com.example.pullrecyclerview;
 
 import android.app.Activity;
 import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +10,7 @@ import android.view.WindowManager;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import com.example.pullrecyclerview.view.HeaderListView;
 
 public class MainActivity extends Activity {
     // 定义显示的数据
