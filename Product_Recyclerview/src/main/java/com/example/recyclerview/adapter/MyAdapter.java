@@ -14,6 +14,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+//自定义适配器类
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     private Context context;
 
