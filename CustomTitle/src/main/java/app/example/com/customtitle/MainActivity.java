@@ -2,6 +2,7 @@ package app.example.com.customtitle;
 
 import android.os.Bundle;
 
+//MainActivity继承自定义Title
 public class MainActivity  extends TitleActivity {
 
     @Override
