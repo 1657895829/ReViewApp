@@ -25,7 +25,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-//用户登录页面
+//用户原生登录页面
 public class MainActivity extends AppCompatActivity implements LoginViewCallBack {
 
     @BindView(R.id.login_mobile)
