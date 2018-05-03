@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        fresco:actualImageScaleType="focusCrop"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:placeholderImage="@drawable/app_default"
+        fresco:failureImageScaleType="fitCenter"
+        fresco:failureImage="@drawable/load_error_image"
+        android:layout_height="200dp"
+        android:layout_width="600dp"
+        android:id="@+id/iv"/>
+
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#005881"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:textSize="20sp"
+        android:text="影片标题"
+        android:id="@+id/tv"
+        />
+
+</LinearLayout>
