@@ -1,0 +1,3 @@
+<resources>
+    <string name="app_name">Fresco图片加载+Eventbus跳转传值+Retrofit请求数据+GreenDao操作数据+Mvp分层+RecyclerView展示数据+ButtonKnife生成控件</string>
+</resources>
